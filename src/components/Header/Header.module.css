@@ -1,0 +1,92 @@
+header{
+    background: #fa9613;
+    width: 100%;
+}
+.logo{
+    width: 50px;
+}
+.menu_nav{
+    display: flex;
+    justify-content: flex-end;
+}
+ul.nav{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 75px;
+    align-items: center;
+
+}
+ul.nav li{
+    color: #fff;
+    margin-right: 3rem;
+    height: 100%;
+}
+ul.nav li a {
+    font-family: "MonBold";
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+ul.nav li a:hover{
+    text-decoration: underline;
+}
+ul.nav li a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    float: left;
+    padding-right: 10px;
+}
+
+
+ul.nav li ul {
+    position: absolute;
+    background-color: #e79932;
+    list-style: none;
+    padding: 0;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    width: 143px;
+    z-index: 99999;
+}
+ul.nav li ul li {
+    margin: 0;
+}
+ul.nav li:hover > ul,
+ul.nav li:hover > ul,
+ul.nav li ul:focus,
+ul.nav li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ul.nav li ul li:hover {
+    background-color: #FA9613;
+}
+ul.nav li ul li a:hover {
+    text-decoration: none;
+}
+ul.nav li ul li a:before {
+    content: '';
+    margin-top: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    float: none;
+}
+ul.nav li ul li a {
+    padding: 20px 17px;
+    font-family: "MonR";
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    text-transform: none;
+}
